@@ -213,10 +213,10 @@ class ProductUploadController extends BaseController
             return Response::json($response);
         }
 
-        // \Log::info('getting csvData');
+        \Log::info('getting csvData');
         $records = $this->getRecords($file, 2, 0);
 
-        if (!is_iterable($records)) {
+        if (!is_array($records) || count($records) == 0 || !is_array($records[0])) {
             $response['message'] = 'The uploaded file appears empty or has an invalid structure.';
             return Response::json($response);
         }
