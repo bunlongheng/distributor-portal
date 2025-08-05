@@ -1,0 +1,17 @@
+/bootstrap/compiled.php
+/bootstrap/environment.php
+bootstrap/environment.php
+/public/logo_path*
+/app/files*
+/vendor
+composer.phar
+composer.lock
+.env.*.php
+.env.php
+.DS_Store
+Thumbs.db
+/app/config/local*
+Icon\r
+.idea
+node_modules/
+.env

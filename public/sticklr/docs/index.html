@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Sticklr - Sticky Side Panel CSS3 jQuery Plugin</title>	
+	<meta name="description" content="Sticky Side Panel CSS3 jQuery Plugin" />	
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="960gs.css" />
+	<link rel="stylesheet" type="text/css" media="screen,projection" href="style.css" />
+</head>
+<body>
+    
+    <div id="page" class="container_12">
+        <div class="grid_12">
+            <div id="header">
+                <h1>Sticklr</h1>
+                <h3>Sticky Side Panel CSS3 jQuery Plugin</h3>
+            </div>
+            <div class="clear"></div>
+            <div id="slider">
+                <p>Thank you for purchasing my script. If you have any questions that are beyond the scope of this help file, please feel free to email me via my user page contact form <a href="http://codecanyon.net/user/amatyr4n?ref=amatyr4n">here</a>. Thanks so much!</p>
+                <h3>Features</h3>
+                <p>Inspired by Envato site-switcher, here is what I came up with, a sticky side panel made with CSS and enhanced greatly with jQuery.</p>
+            </div>
+            <div class="clear"></div>
+            <div id="features">
+                <div class="grid_4 alpha">
+                    <h4>Show on Hover/Click/Dblclick</h4>
+                    <p>Set menu to be shown when mouse hover, click, or double-click. In this page, you can see the left one is click and the right one is hover.</p>
+                </div>
+                <div class="grid_4">
+                    <h4>Works without JS (CSS Fallback)</h4>
+                    <p>Built from ground up, Sticklr is friendly for user having their JavaScript disabled. Although this is an extreme rare case.</p>
+                </div>
+                <div class="grid_3 omega">
+                    <h4>Left/Right Side</h4>
+                    <p>There is no right placement whether it's right or left. Sometimes it could be both.</p>
+                </div>
+                <div class="clear"></div>
+                <div class="grid_4 alpha">
+                    <h4>Fixed position</h4>
+                    <p>Even if you scroll the page, Sticklr will remain in it's place. Sticklr will always follow you in the middle on the side of the page.</p>
+                </div>
+                <div class="grid_4">
+                    <h4>Multiple column</h4>
+                    <p>Menu can be separated in multiple columns with different title, you only need to make a separate list for each column.</p>
+                </div>
+                <div class="grid_3 omega">
+                    <h4>Flexible Styling</h4>
+                    <p>Easy to customize the styling right from CSS, that's why it's CSS file is separated from the jQuery script.</p>
+                </div>
+                <div class="clear"></div>
+                <div class="grid_4 alpha">
+                    <h4>Centered Automatically</h4>
+                    <p>Sticklr is smartly positioned. Resizing your browser would automatically correct the position itself to center of the browser.</p>
+                </div>
+                <div class="grid_4">
+                    <h4>Cross-browser compatible</h4>
+                    <p>Sticklr has been tested to work on IE7+, Firefox 3+, Chrome 11+. If you still found a bug, please shoot me an email so I can fix it.</p>
+                </div>
+                <div class="grid_3 omega">
+                    <h4>Simple & lightweight</h4>
+                    <p>Come with &lt;10KB minified JS+CSS, a fair size for a nice enhancement.</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div 
+            <div id="documentation">
+                <h3>Usage</h3>
+                <h4>Document Setup</h4>
+                <p>First you have to include all the required files: the jQuery library, the Sticklr CSS file, and the Sticklr JS file</p>
+                <pre>&lt;!-- include the required CSS --&gt;
+&lt;link rel="stylesheet" type="text/css" href="<strong>jquery-sticklr-1.4-light-color.css</strong>" /&gt;
+                
+&lt;!-- include any version of jQuery before including plugin --&gt;
+&lt;script type="text/javascript" src="<strong>jquery-1.x.x.min.js</strong>"&gt;&lt;/script&gt;
+
+&lt;!-- include the plugin --&gt;
+&lt;script type="text/javascript" src="<strong>jquery-sticklr-1.4.min.js</strong>"&gt;&lt;/script&gt;</pre>
+                <p>Then you must have this HTML markup somewhere before closing &lt;body&gt; tag</p>
+                <pre>&lt;ul id="example" class="sticklr"&gt;
+    &lt;li&gt;
+        &lt;a href="#" class="icon-something" title="This is a floated icon"&gt;&lt;/a&gt;
+        &lt;ul&gt;
+            &lt;li class="sticklr-title"&gt;
+                &lt;a href="#"&gt;This is a title&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href="http://www.google.com" class="icon-something"&gt;This is a link&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href="http://www.facebook.com" class="icon-something"&gt;Another link&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</pre>
+            <p>Thus, some set of rules here are</p>
+            <ul>
+                <li>The pattern as general is ul > li > a+ul > li a/form/table</li>
+                <li>It's recommended for the topmost &lt;ul&gt; element having "sticklr" class name, this will ensure CSS fallback.</li>
+                <li>Menu defined in second level &lt;ul&gt; list, so you can make multiple column by adding another &lt;ul&gt; element there</li>
+                <li>To make a link as menu title, add class="sticklr-title" to it's &lt;li&gt; parent</li>
+                <li>To set the icon to a link, simply add icon class name to the &lt;a&gt; element</li>
+                <li>Make sure all elements have proper closing tag to avoid unwanted behavior</li>
+            </ul>
+            <p>Finally, apply Sticklr to that list</p>
+            <pre>&lt;script type="text/javascript"&gt;
+    $(document).ready(function(){
+        $('#example').sticklr();
+    }
+&lt;/script&gt;</pre>
+                <h4>Plugin Options</h4>
+                <table>
+                    <tr>
+                        <th>Options</th>
+                        <th>Type</th>
+                        <th>Default value</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>animate</td>
+                        <td>Boolean</td>
+                        <td>false</td>
+                        <td>Define whether the sticky panel has to be animated when scrolling/resizing browser.</td>
+                    </tr>
+                    <tr>
+                        <td>menuHeight</td>
+                        <td>Number</td>
+                        <td>20</td>
+                        <td>Define the height size of a column in pixel, default to 20 pixel.</td>
+                    </tr>
+                    <tr>
+                        <td>menuWidth</td>
+                        <td>Number</td>
+                        <td>180</td>
+                        <td>Define the width size of a column in pixel, default to 180 pixel.</td>
+                    </tr>
+                    <tr>
+                        <td>relativeTo</td>
+                        <td>String</td>
+                        <td>'center'</td>
+                        <td>Define vertical positioning relative to the browser viewport (top/middle/ground), default to center.</td>
+                    </tr>
+                    <tr>
+                        <td>relativeGap</td>
+                        <td>Number</td>
+                        <td>15</td>
+                        <td>Define the relative gap size in pixel if relativeTo was set to top or bottom.</td>
+                    </tr>
+                    <tr>
+                        <td>showOn</td>
+                        <td>String</td>
+                        <td>'click'</td>
+                        <td>Define event when menu must be shown. Some possible mouse events: 'hover', 'click', 'dblclick'.</td>
+                    </tr>
+                    <tr>
+                        <td>stickTo</td>
+                        <td>String</td>
+                        <td>'left'</td>
+                        <td>Define placement position whether to left or right side.</td>
+                    </tr>
+                    <tr>
+                        <td>tabHeight</td>
+                        <td>Number</td>
+                        <td>16</td>
+                        <td>Define the height size of the tab, default to 16px</td>
+                    </tr>
+                    <tr>
+                        <td>tabWidth</td>
+                        <td>Number</td>
+                        <td>16</td>
+                        <td>Define the width size of the tab, default to 16px</td>
+                    </tr>
+                </table>
+                <p>To override default value, you can pass the custom values when initialize. You don't have to pass all, just specific properties you need.</p>
+                <pre>$('#example').sticklr({
+    animate     : true,
+    menuHeight  : 20,
+    menuWidth   : 200,
+    relativeTo  : 'top',
+    relativeGap : 10,
+    showOn      : 'hover',
+    stickTo     : 'right',
+    tabHeight   : 64,
+    tabWidth    : 32
+});</pre>
+                <h4>Public Method</h4>
+                <p>Sticklr provide public method to hide the current active shown menu with <code>sticklr('hide')</code>, for example if you want to hide all shown menu when an event occured you can use</p>
+                <pre>$().sticklr('hide');</pre>
+                <h4>Custom Icon</h4>
+                <p>To define an icon class name you have to dive into CSS file, then add class like example below in the bottom of the file</p>
+                <pre>.icon-twitter {
+    background-image: url('images/twitter.png');
+}</pre>
+                <p>The image for icon must be a PNG/GIF/JPG with the same size as your defined size (or by default it's 16x16 pixel). In the example above we can see the twitter icon is in /images folder relative to the CSS file.</p>
+                <h4>Credits</h4>
+                <ul>
+                    <li>Some icons used here are from <a href="http://icondock.com">icondock</a> and <a href="http://pc.de/icons">pc.de</a> which licensed under CreativeCommons.</li>
+                </ul>
+                <h4>Thanks</h4>
+                <p>Once again, thank you so much for purchasing this script. As I said at the beginning, I&#39;d be glad to help you if you have any questions relating to this script. No guarantees, but I&#39;ll do my best to assist. If you have a more general question relating to the script on CodeCanyon, you might consider visiting the forums and asking your question in the &quot;Item Discussion&quot; section.</p>
+<p><strong>-amatyr4n</strong></p>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>    
+</body>
+</html>

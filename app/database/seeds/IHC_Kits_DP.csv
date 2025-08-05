@@ -1,0 +1,90 @@
+sku,description
+IHC0101H,Human GFAP Ready-To-Use IHC Kit
+IHC0101M,Mouse GFAP Ready-To-Use IHC Kit
+IHC0101R,Rat GFAP Ready-To-Use IHC Kit
+IHC0102H,Human Histone H3 Ready-To-Use IHC Kit
+IHC0102M,Mouse Histone H3 Ready-To-Use IHC Kit
+IHC0102R,Rat Histone H3 Ready-To-Use IHC Kit
+IHC0103M,Mouse TFF3 Ready-To-Use IHC Kit
+IHC0103R,Rat TFF3 Ready-To-Use IHC Kit
+IHC0104H,Human Glucagon Ready-To-Use IHC Kit
+IHC0104M,Mouse Glucagon Ready-To-Use IHC Kit
+IHC0104R,Rat Glucagon Ready-To-Use IHC Kit
+IHC0105H,Human MYBL2 Ready-To-Use IHC Kit
+IHC0105M,Mouse MYBL2 Ready-To-Use IHC Kit
+IHC0105R,Rat MYBL2 Ready-To-Use IHC Kit
+IHC0106H,Human Calbindin Ready-To-Use IHC Kit
+IHC0106M,Mouse Calbindin Ready-To-Use IHC Kit
+IHC0106R,Rat Calbindin Ready-To-Use IHC Kit
+IHC0107H,Human MBP Ready-To-Use IHC Kit
+IHC0107M,Mouse MBP Ready-To-Use IHC Kit
+IHC0107R,Rat MBP Ready-To-Use IHC Kit
+IHC0108H,Human Peripherin Ready-To-Use IHC Kit
+IHC0108M,Mouse Peripherin Ready-To-Use IHC Kit
+IHC0108R,Rat Peripherin Ready-To-Use IHC Kit
+IHC0109H,Human GLP-1 Ready-To-Use IHC Kit
+IHC0109M,Mouse GLP-1 Ready-To-Use IHC Kit
+IHC0109R,Rat GLP-1 Ready-To-Use IHC Kit
+IHC0110H,Human S100B Ready-To-Use IHC Kit
+IHC0110M,Mouse S100B Ready-To-Use IHC Kit
+IHC0110R,Rat S100B Ready-To-Use IHC Kit
+IHC0111H,Human Histone H3 Ready-To-Use IHC Kit
+IHC0111M,Mouse Histone H3 Ready-To-Use IHC Kit
+IHC0111R,Rat Histone H3 Ready-To-Use IHC Kit
+IHC0112H,Human Cytokeratin 7 Ready-To-Use IHC Kit
+IHC0113H,Human Vimentin Ready-To-Use IHC Kit
+IHC0114H,Human Alpha smooth muscle Actin Ready-To-Use IHC Kit
+IHC0114M,Mouse Alpha smooth muscle Actin Ready-To-Use IHC Kit
+IHC0114R,Rat Alpha smooth muscle Actin Ready-To-Use IHC Kit
+IHC0115H,Human CD31 Ready-To-Use IHC Kit
+IHC0124M,Mouse Cathepsin L Ready-To-Use IHC Kit
+IHC0123H,Human PCNA Ready-To-Use IHC Kit
+IHC0118H,Human ACE2 Ready-To-Use IHC Kit
+IHC0124R,Rat Cathepsin L Ready-To-Use IHC Kit
+IHC0123R,Rat PCNA Ready-To-Use IHC Kit
+IHC0123M,Mouse PCNA Ready-To-Use IHC Kit
+IHC0122H,Human PRL Ready-To-Use IHC Kit
+IHC0121M,Mouse GAPDH Ready-To-Use IHC Kit
+IHC0121H,Human GAPDH Ready-To-Use IHC Kit
+IHC0120M,Mouse Phospho-PERK Ready-To-Use IHC Kit
+IHC0119H,Human CDKN3 Ready-To-Use IHC Kit
+IHC0117M,Mouse Cytochrome C Ready-To-Use IHC Kit
+IHC0117H,Human Cytochrome C Ready-To-Use IHC Kit
+IHC0116H,Human HP1 alpha Ready-To-Use IHC Kit
+IHC0121R,Rat GAPDH Ready-To-Use IHC Kit
+IHC0117H,Human Cytochrome C Ready-To-Use IHC Kit
+IHC0125H,Human CD20 Ready-To-Use IHC Kit
+IHC0125M,Mouse CD20 Ready-To-Use IHC Kit
+IHC0125R,Rat CD20 Ready-To-Use IHC Kit
+IHC0126H,Human CD4 Ready-To-Use IHC Kit
+IHC0127H,Human CD45 Ready-To-Use IHC Kit
+IHC0128H,Human ATF4 Ready-To-Use IHC Kit
+IHC0128M,Mouse ATF4 Ready-To-Use IHC Kit
+IHC0128R,Rat ATF4 Ready-To-Use IHC Kit
+IHC0129H,Human NF-L Ready-To-Use IHC Kit
+IHC0129M,Mouse NF-L Ready-To-Use IHC Kit
+IHC0129R,Rat NF-L Ready-To-Use IHC Kit
+IHC0130H,Human Cytokeratin 8 Ready-To-Use IHC Kit
+IHC0131H,Human SLC44A1 Ready-To-Use IHC Kit
+IHC0132H,Human CEACAM5 Ready-To-Use IHC Kit
+IHC0133H,Human CD68 Ready-To-Use IHC Kit
+IHC0133R,Rat CD68 Ready-To-Use IHC Kit
+IHC0134H,Human LKB1 Ready-To-Use IHC Kit
+IHC0134M,Mouse LKB1 Ready-To-Use IHC Kit
+IHC0134R,Rat LKB1 Ready-To-Use IHC Kit
+IHC0135H,Human Placental lactogen Ready-To-Use IHC Kit
+IHC0136H,Human MYL2 Ready-To-Use IHC Kit
+IHC0136M,Mouse MYL2 Ready-To-Use IHC Kit
+IHC0136R,Rat MYL2 Ready-To-Use IHC Kit
+IHC0137H,Human LAMP1 Ready-To-Use IHC Kit
+IHC0138M,Mouse LRP2 Ready-To-Use IHC Kit
+IHC0138R,Rat LRP2 Ready-To-Use IHC Kit
+IHC0139H,Human ATP1A1 Ready-To-Use IHC Kit
+IHC0139M,Mouse ATP1A1 Ready-To-Use IHC Kit
+IHC0139R,Rat ATP1A1 Ready-To-Use IHC Kit
+IHC0140H,Human HLA-C Ready-To-Use IHC Kit
+IHC0141H,Human TIMP1 Ready-To-Use IHC Kit
+IHC0142H,Human FASN Ready-To-Use IHC Kit
+IHC0143H,Human Desmin Ready-To-Use IHC Kit
+IHC0143M,Mouse Desmin Ready-To-Use IHC Kit
+IHC0143R,Rat Desmin Ready-To-Use IHC Kit

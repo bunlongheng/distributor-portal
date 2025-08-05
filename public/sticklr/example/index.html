@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Sticklr</title>	
+	<link rel="stylesheet" type="text/css" media="screen,projection" href="../src/jquery-sticklr-1.4-light-color.css" />
+	<script type="text/javascript" src="jquery-1.4.3.min.js"></script>
+	<script type="text/javascript" src="../src/jquery-sticklr-1.4.min.js"></script>
+	<script type="text/javascript">
+	    $(document).ready(function(){
+	        $('#example-1').sticklr({
+                animate         : false,
+                showOn		    : 'hover'
+			});
+	    });
+	</script>
+</head>
+<body>
+
+    <ul id="example-1" class="sticklr">
+    
+        <li>
+            <a href="http://www.google.com" class="icon-google" title="This sticklr tab act as a direct link to Google"></a>
+        </li>
+        
+        <li>
+            <a href="#" class="icon-zoom"></a>
+            
+            <ul>
+                <li>
+                    <form action="http://letmegooglethat4u.com" method="GET">
+                        <input type="text" name="q" value="" placeholder="Type then press Enter.." />
+                    </form>
+                </li>
+            </ul>
+        </li>
+        
+        <li>
+            <a href="#" class="icon-tag"></a>
+            
+            <ul>
+                <li class="sticklr-title">
+                    <a href="#">jQuery plugin</a>
+                </li>
+                <li>
+                    <a href="http://codecanyon.net/item/sticklr-sticky-side-panel-css3-jquery-plugin/302039?ref=amatyr4n" class="icon-addthis">Sticklr</a>
+                </li>
+                <li>
+                    <a href="#" class="icon-sitemap">Menu item</a>
+                </li>
+            </ul>
+            
+            <ul>
+                <li class="sticklr-title">
+                    <a href="#">WordPress plugin</a>
+                </li>
+                <li>
+                    <a href="http://codecanyon.net/item/sticklr-wp-sticky-side-panel-wordpress-plugin/462554?ref=amatyr4n" class="icon-wordpress">Sticklr-WP</a>
+                </li>
+                <li>
+                    <a href="http://codecanyon.net/user/amatyr4n?ref=amatyr4n" class="icon-user">Author</a>
+                </li>
+            </ul>
+        </li>
+        
+        <li>
+            <a href="#" class="icon-facebook"></a>
+            
+            <ul>
+                <li class="sticklr-title">
+                    <a href="#">Share this</a>
+                </li>
+                <li>
+                    <a href="http://facebook.com/sharer.php?u=http://codecanyon.net/user/amatyr4n?ref=amatyr4n" class="icon-facebook">Facebook</a>
+                </li>
+                <li>
+                    <a href="http://twitter.com/amatyr4n" class="icon-twitter">Twitter</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    
+</body>
+</html>
