@@ -238,15 +238,38 @@ class ProductUploadController extends BaseController
         $csvData = $records;
         // \Log::info('recieved csvData');
 
-        // \Log::info('getting restData');
         ini_set('memory_limit', '2048M');
-        set_time_limit(-1);
+        set_time_limit(0); // Use 0 for unlimited
+
         $ch = curl_init("http://biossantibodies.com/api/v2/products?key=qoEfzhTb7tfF6S86fp9LgMvor6Wfax3R7gRrnbAYZOLDV&fields=name,status,price,conjugation&conjugate=1&active=1");
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 300); // 5 minutes
+        curl_setopt($ch, CURLOPT_HTTPHEADER, [
+            'Accept: application/json',
+            'User-Agent: Mozilla/5.0'
+        ]);
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+        // If using https, you can try this (not recommended for production):
+        // curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+
         $response = curl_exec($ch);
+        if ($response === false) {
+            $response = [
+                'status' => false,
+                'message' => 'Curl error: ' . curl_error($ch)
+            ];
+            return Response::json($response);
+        }
         curl_close($ch);
-        // \Log::info('recieved restData');
+
         $restData = json_decode($response, true);
+        if ($restData === null) {
+            $response = [
+                'status' => false,
+                'message' => 'Failed to decode JSON response from API.'
+            ];
+            return Response::json($response);
+        }
         // \Log::info('restData count: '. count($restData));
         unset($response);
 
@@ -333,7 +356,6 @@ class ProductUploadController extends BaseController
         //\Log::info('active sku in csv: ', $activeSkus);
         unset($csvData);
         // \Log::info('looping restData');
-
         // create an array of active records which exists in api but missing in csv
         foreach ($restData as $key => $value) {
             if ($key != '' && !isset($activeSkus[$key]) && $this->strposa($restData[$key]['conjugation'], $ignore_conjugation)) {
